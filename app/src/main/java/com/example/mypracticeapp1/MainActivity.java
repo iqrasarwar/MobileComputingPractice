@@ -19,8 +19,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         //setcontent view is used to load resources
 
-        setContentView(R.layout.activity_main);
-
+        //setContentView(R.layout.activity_main);
+        setContentView(R.layout.testlayout);
         //give button id to bind
         //if you miss the constraint the component will ove to the 0,0 location
         //give it the contraints from the design section

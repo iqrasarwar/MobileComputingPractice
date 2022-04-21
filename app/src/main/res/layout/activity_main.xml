@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-<!-- afaf: pakizgi
+    <!-- afaf: pakizgi
 ghana :
 
 ViewGroup-> 2 views -> button and ->textview
@@ -33,109 +33,72 @@ matchparent if both height and width are match parent it will occupy the whole s
         android:id="@+id/editTextTextEmailAddress2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="79dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="19dp"
         android:ems="10"
         android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextEmailAddress3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+        tools:layout_editor_absoluteX="186dp"
+        tools:layout_editor_absoluteY="174dp" />
 
     <EditText
         android:id="@+id/editTextTextEmailAddress3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="49dp"
-        android:layout_marginTop="19dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="32dp"
         android:ems="10"
         android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toTopOf="@+id/signup"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView3"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress2" />
+        tools:layout_editor_absoluteX="186dp"
+        tools:layout_editor_absoluteY="258dp" />
 
     <Button
         android:id="@+id/signup"
         android:layout_width="match_parent"
         android:layout_height="44dp"
-        android:layout_marginStart="150dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="159dp"
-        android:layout_marginBottom="344dp"
         android:text="Sign Up"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress3"
-        app:layout_constraintVertical_bias="1.0" />
+        tools:layout_editor_absoluteX="150dp"
+        tools:layout_editor_absoluteY="366dp" />
 
     <EditText
         android:id="@+id/editTextTextEmailAddress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="53dp"
-        android:layout_marginTop="71dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="28dp"
+        android:layout_marginTop="48dp"
         android:ems="10"
         android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextEmailAddress2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/nameText"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        tools:layout_editor_absoluteX="186dp" />
+
+    <!--show baseline to align label with edit text-->
 
     <TextView
         android:id="@+id/nameText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="133dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginTop="48dp"
         android:text="UseName"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
         tools:layout_editor_absoluteX="72dp" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:layout_marginBottom="16dp"
         android:text="Email"
-        app:layout_constraintBottom_toTopOf="@+id/textView3"
-        app:layout_constraintTop_toBottomOf="@+id/nameText"
-        tools:layout_editor_absoluteX="72dp" />
+        tools:layout_editor_absoluteX="72dp"
+        tools:layout_editor_absoluteY="162dp" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="31dp"
-        android:layout_marginBottom="408dp"
         android:text="PassWord"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        tools:layout_editor_absoluteX="72dp" />
+        tools:layout_editor_absoluteX="72dp"
+        tools:layout_editor_absoluteY="266dp" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="150dp"
-        android:layout_marginTop="33dp"
-        android:layout_marginEnd="170dp"
-        android:layout_marginBottom="71dp"
         android:text="SIGN UP HERE"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextEmailAddress"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        tools:layout_editor_absoluteX="150dp"
+        tools:layout_editor_absoluteY="33dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
