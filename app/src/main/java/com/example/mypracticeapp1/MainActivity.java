@@ -13,7 +13,8 @@ public class MainActivity extends AppCompatActivity {
     //we will create instance/objects for all components from the widgets of andriod
     //let say for a button
     Button SignUp;
-    TextView NameText;
+    TextView NameText,count;
+    Button inc;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +27,17 @@ public class MainActivity extends AppCompatActivity {
         //give it the contraints from the design section
         SignUp = findViewById(R.id.signup);
         NameText = findViewById(R.id.nameText);
+        count = findViewById(R.id.count);
+        inc= findViewById(R.id.inc);
+        inc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String countString = count.getText().toString();
+                Integer counts = Integer.parseInt(countString);
+                counts++;
+                count.setText(counts.toString());
+            }
+        });
         SignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
