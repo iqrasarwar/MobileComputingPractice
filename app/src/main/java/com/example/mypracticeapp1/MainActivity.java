@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
                 count.setText(counts.toString());
             }
         });
+        // TODO: todo#counter
         SignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
