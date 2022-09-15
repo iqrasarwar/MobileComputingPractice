@@ -21,30 +21,30 @@ public class MainActivity extends AppCompatActivity {
         //setcontent view is used to load resources
 
         //setContentView(R.layout.activity_main);
-        setContentView(R.layout.testlayout);
+        setContentView(R.layout.activity_main);
         //give button id to bind
         //if you miss the constraint the component will ove to the 0,0 location
         //give it the contraints from the design section
-        SignUp = findViewById(R.id.signup);
-        NameText = findViewById(R.id.nameText);
-        count = findViewById(R.id.count);
-        inc= findViewById(R.id.inc);
-        inc.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String countString = count.getText().toString();
-                Integer counts = Integer.parseInt(countString);
-                counts++;
-                count.setText(counts.toString());
-            }
-        });
+//        SignUp = findViewById(R.id.signup);
+//        NameText = findViewById(R.id.nameText);
+//        count = findViewById(R.id.count);
+//        inc= findViewById(R.id.inc);
+//        inc.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                String countString = count.getText().toString();
+//                Integer counts = Integer.parseInt(countString);
+//                counts++;
+//                count.setText(counts.toString());
+//            }
+//        });
         // TODO: todo#counter
-        SignUp.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                NameText.setText("successs!");
-            }
-        });
+//        SignUp.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                NameText.setText("successs!");
+//            }
+//        });
     }
 
 }

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:textAlignment="center">
-        <!--
+    <!--
         set id
         set click listner
         dont use string directly define it in string and then use it
